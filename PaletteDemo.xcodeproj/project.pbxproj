@@ -106,20 +106,12 @@
 		13C5B7B5237D620000496B01 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				13C5B7BF237D620000496B01 /* Model */,
 				13C5B7C4237D620000496B01 /* UIImage+Palette.h */,
 				13C5B7BA237D620000496B01 /* UIImage+Palette.m */,
 				13C5B7BD237D620000496B01 /* UGCPalette.h */,
 				13C5B7B7237D620000496B01 /* UGCPalette.m */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		13C5B7BF237D620000496B01 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		13C5B7CE237D621E00496B01 /* ThirdLib */ = {
