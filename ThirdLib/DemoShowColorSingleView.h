@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UGCPaletteColorModel.h"
+#import "UGCPalette.h"
 
 @interface DemoShowColorViewCell : UICollectionViewCell
 

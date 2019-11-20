@@ -51,7 +51,7 @@
         showText = [NSString stringWithFormat:@"%@:识别失败",modeKey];
     }else{
         showText = [NSString stringWithFormat:@"%@:%@",modeKey,model.imageColorString];
-        percentageText = [NSString stringWithFormat:@"%.1f%@",model.percentage*100,@"%"];
+//        percentageText = [NSString stringWithFormat:@"%.1f%@",model.percentage*100,@"%"];
         self.backgroundColor = [UIColor colorWithHexString:model.imageColorString];
     }
     _showColorLabel.text = showText;

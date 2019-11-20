@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "UGCPaletteTarget.h"
-#import "UGCPaletteColorModel.h"
 
-static const NSInteger kMaxColorNum = 16;
+@interface UGCPaletteColorModel : NSObject
+
+/** ColorHexString eg:"#FFC300" */
+@property (nonatomic,copy) NSString *imageColorString;
+
+@end
 
 typedef void(^GetColorBlock)(UGCPaletteColorModel *recommendColor,NSDictionary *allModeColorDic,NSError *error);
 
@@ -20,18 +23,5 @@ typedef void(^GetColorBlock)(UGCPaletteColorModel *recommendColor,NSDictionary *
 - (instancetype)initWithImage:(UIImage*)image;
 
 - (void)startToAnalyzeImage:(GetColorBlock)block;
-
-//you can use '|' to separate every target mode ,eg :"DARK_VIBRANT_PALETTE | VIBRANT_PALETTE"
-//- (void)startToAnalyzeImage:(GetColorBlock)block forTargetMode:(PaletteTargetMode)mode;
-
-- (void)startToAnalyzeForTargetMode:(UGCPaletteTargetMode)mode withCallBack:(GetColorBlock)block;
-
-@end
-
-
-
-@interface VBox : NSObject
-
-- (NSInteger)getVolume;
 
 @end
